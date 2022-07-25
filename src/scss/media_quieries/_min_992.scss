@@ -1,0 +1,24 @@
+@media (min-width: 992px) {
+    $circleImage992: calc(19rem + 17vw);
+
+    .w-circle-img {
+        width: $circleImage992;
+    }
+
+    .h-circle-img {
+        height: $circleImage992;
+    }
+
+    .font-15-2 {
+        font-size: calc(1.5rem + 1vw);
+    }
+
+    .small-img {
+        max-width: 30%;
+        height: auto;
+        transform: translateY(-8rem);
+    }
+    .mt-12 {
+        margin-top: 12rem!important;
+    }
+}

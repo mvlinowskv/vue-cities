@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+* {
+    font-family: Playfair Display;
+}
+
+.outline-0 {
+    outline: none!important;
+}
+
+.border-black {
+    border-color: #000!important;
+}
+
+.border-h-left {
+    border-left: 1px solid #000 !important;
+}
+
+.border-h-right {
+    border-right: 1px solid #000 !important;
+}
+
+.bottom-50vh {
+    top: 50vh;
+}
+
+.top-card-62 {
+    top: 62vh;
+}
+
+.z-index-10 {
+    z-index: 10;
+}
+
+// .feature-h {
+//     margin-right: auto;
+//     writing-mode: vertical-lr;
+//     // -webkit-text-orientation: upright;
+// }
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.small-img {
+    max-width: 30%;
+    height: auto;
+    transform: translateY(-4rem);
+}
+

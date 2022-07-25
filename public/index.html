@@ -5,13 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <header
+        class="main-header d-flex flex-column flex-md-row align-items-center px-md-4 mb-3 p-4 border-bottom shadow-sm position-fixed w-100 z-index-10">
+        <div class="d-lg-none text-right w-100 position-absolute mr-5">
+            <input class="d-none" type="checkbox" id="menu" onclick="OpenMenu()">
+
+            <label for="menu">
+                <svg aria-hidden="true" width="25" height="25" focusable="false" data-prefix="fas" data-icon="bars"
+                    class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                    </path>
+                </svg>
+            </label>
+
+        </div>
+
+        <nav class="my-2 my-md-0 mr-md-3 d-flex text-left text-lg-right" id="site-header-menu">
+            <div class="w-70vw transition-low">
+              <a>Menu</a>
+              <a>Menu</a>
+              <a>Menu</a>
+              <a>Menu</a>
+            </div>
+            
+
+            <label for="menu">
+                <div class="container-menu position-absolute w-30vw h-100vh d-lg-none" id="fall-white">
+                  
+                </div>
+            </label>
+
+        </nav>
+        </div>
+
+    </header>
+    
+    <div id="app" class="background-grey"></div>
+
+    
+
+    <script>
+      /*Open Menu mobile */
+
+function OpenMenu() {
+    var checkbox = document.getElementById("menu");
+    var menu = document.getElementById("site-header-menu");
+    var fall = document.getElementById('fall-white');
+  
+    if(checkbox.checked == true) {
+      menu.style.left = 0;
+      menu.style.top = "0rem";
+    } else {
+      menu.style.left="-100vw";
+      menu.style.top = "0rem";
+    }
+  }
+    </script>
   </body>
 </html>
