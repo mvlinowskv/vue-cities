@@ -1,0 +1,25 @@
+@media (max-width:991.98px) {
+    nav {
+        
+        z-index: 10;
+        left: -100vw;
+        transition: 1s ease-out;
+        height: 100vh;
+        position: absolute;
+    }
+
+    .main-header {
+        background: rgba(74, 74, 74, 0.75);
+    }
+
+    .container-menu {
+        background: rgba(255, 255, 255, 0.5);
+        z-index: 5;
+        transition: 0.2s ease-out;
+        width: 30vw;
+    }
+
+
+
+
+}

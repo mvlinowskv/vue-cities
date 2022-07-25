@@ -1,0 +1,25 @@
+// .card-feature {
+//     width: calc(13rem + 17vw);
+//     height: calc(15rem + 17vw);
+//     // border-radius: 50% 0;
+// }
+
+.card-text {
+    // top: calc(9rem + 14vw);
+    width: calc(15rem + 13vw);
+    // border-radius: 50%;
+    height: 20rem;
+    top: 73vh;
+    transition: top 0.6s ease-out;
+
+    &:hover {
+        top: 43vh;
+        transition: top 0.6s ease-out;
+    }
+}
+
+.card-feature:hover {
+    .card-text {
+        top: 43vh;
+    }
+}
